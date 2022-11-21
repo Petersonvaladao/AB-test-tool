@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>AB Test Tool</title>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="logo">
+      <img src="assets/logo-icon.png" alt="logo">
+      <span>AB Testguide</span>
+    </div>
+    <div class="nav-text">
+      <p>Calculator by ABtestguide.com <br> share on facebook · share on twitter · share on linkedin</p>
+    </div>
+  </nav>
+
+  <section class="main-text-container">
+    <h1 class="main-title">Bayesian A/B-test Calculator</h1>
+    <p class="main-text">What is the probability that your test variation beats the original? Make a solid risk assessment whether to implement the variation or not.
+    </p>
+  </section>
+
+  <main>
+    <form class="user-input">
+      <h2 class="input-title">Test data</h2>
+      <hr>
+      <div class="input-area">
+        <div class="input-area-colum">
+          <label for="usersA">Users A</label>
+          <input type="text" id="usersA">
+        </div>
+        <div class="input-area-colum">
+          <label for=" conversionsA">Conversions A</label>
+          <input type="text" id="conversionsA">
+        </div>
+      </div>
+
+      <div class="input-area">
+        <div class="input-area-colum">
+          <label for="usersB">Users B</label>
+          <input type="text" id="usersB">
+        </div>
+        <div class="input-area-colum">
+          <label for="conversionsB">Conversions B</label>
+          <input type="text" id="conversionsB">
+        </div>
+
+      </div>
+      <button class="btn">Make calculation</button>
+
+
+      <div class="bussinessCase-area">
+        <h2 class="input-title">Business case data <span>(optional)</span></h2>
+        <hr>
+        <div class="input-area">
+          <div>
+            <label for="testDuration">Test duration in days</label>
+            <input type="text" id="testDuration">
+          </div>
+          <div>
+            <label for="trafficPercent">% of traffic in test</label>
+            <input type="text" id="trafficPercent">
+          </div>
+        </div>
+
+
+        <div class="input-area-colum">
+          <label for="averageValue">Average order value</label>
+          <input type="text" id="averageValue">
+        </div>
+
+        <div class="input-area-colum">
+          <label for="minRevenue">Min. revenue yield in 6 month</label>
+          <input type="text" id="minRevenue">
+        </div>
+      </div>
+      <button class="btn">Calculate + Business case</button>
+
+    </form>
+    <div class="graph-area">
+
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-title">Made with ❤ by ABTestguide</p>
+    <p>Copyright © 2016-now by ABTestguide. Bayesian calculator sketch by Annemarie Klaassen and design by Roy Schieving. Questions?</p>
+    <p>The owner of ABtestguide.com is Help je klant Holding BV - founders of Conversion Hotel and the Experimentation Culture Awards. Check your tracking consent overview and our group privacy policy.</p>
+  </footer>
+</body>
+
+</html>
