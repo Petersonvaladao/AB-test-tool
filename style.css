@@ -16,6 +16,7 @@
   background: rgb(50,120,180);
   background: linear-gradient(180deg, rgba(50,120,180,1) 0%, rgba(39,91,138,1) 100%);
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .nav-bar {
@@ -30,6 +31,10 @@
   justify-self: flex-start;
   display: flex;
   align-items: center;
+}
+
+.logo-title {
+  font-weight: bold;
 }
 
 .nav-text {
@@ -56,11 +61,12 @@
 main {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  
 }
 
 .user-input {
   padding: 1.8em;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-title {
@@ -73,8 +79,7 @@ hr {
 }
 
 input {
-  padding: .9em 1em;
-  margin-right: 2.5em;
+  padding: .9em 3em;
   border: 1.9px solid lightgray;
   border-radius: 5px;
 }
@@ -89,7 +94,7 @@ label {
   display: flex;
   margin: 1em 0 1.5em 0;
   justify-content: space-between;
-  gap: 3em;
+  gap: 2em;
 }
 
 .input-area-colum {
@@ -123,3 +128,10 @@ footer p {
   font-weight: bold;
 }
 
+@media screen and (max-width: 50em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
