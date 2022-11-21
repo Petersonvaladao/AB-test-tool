@@ -14,12 +14,14 @@
 
 <body>
   <nav class="nav-bar">
-    <div class="logo">
-      <img src="assets/logo-icon.png" alt="logo">
-      <span>AB <span class="logo-title">Testguide</span></span>
-    </div>
+    <a href="#">
+      <div class="logo">
+        <img src="assets/logo-icon.png" alt="logo">
+        <span>AB <span class="logo-title">Testguide</span></span>
+      </div>
+    </a>
     <div class="nav-text">
-      <p>Calculator by ABtestguide.com <br> share on facebook · share on twitter · share on linkedin</p>
+      <p>Calculator by <a href="#">ABtestguide.com</a> <br> <a href="#">share on facebook</a> · <a href="#">share on twitter</a> · <a href="#">share on linkedin</a></p>
     </div>
   </nav>
 
@@ -88,15 +90,32 @@
 
 
     <div class="graph-area">
-      <div class="graph-main-test">
-        <h2>Main test result</h2>
-        <p>Chance of B outperforming A</p>
+      <div class="graph-card">
+        <h2>Risk assessment of implementing B</h2>
+        <div class="card-table">
+          <div>
+            <h3>Implement B</h3>
+            <p>Expected risk</p>
+            <p>Expected uplift</p>
+          </div>
+          <div>
+            <h3>Probability</h3>
+            <p>99.7%</p>
+            <p>0.3%</p>
+          </div>
+          <div>
+            <h3>Effect on revenue</h3>
+            <p>-€2,007</p>
+            <p>€382</p>
+          </div>
+          <div class="card-result">
+            <h2>Total contribution</h2>
+            <h2>-€1,999</h2>
+          </div>
+        </div>
       </div>
 
-      <div class="graph-main-test">
-        <h2>Main test result</h2>
-        <p>Chance of B outperforming A</p>
-      </div>
+
     </div>
   </main>
 

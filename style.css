@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 .btn {
   font-size: 1rem;
   font-weight: bold;
@@ -24,7 +32,7 @@
   align-items: center;
   color: #636363;
   font-size: .8rem;
-  padding: .4em;
+  padding: 3em;
 }
 
 .logo {
@@ -45,7 +53,7 @@
 .main-text-container{
   color: #fff;
   background-color: #306289;
-  padding: 2.4em 1.8em;
+  padding: 5em 3em;
 }
 
 .main-title {
@@ -61,10 +69,11 @@
 main {
   display: grid;
   grid-template-columns: 1fr 2fr;
+
 }
 
 .user-input {
-  padding: 1.8em;
+  padding: 5em;
   display: flex;
   flex-direction: column;
 }
@@ -112,11 +121,39 @@ label {
   padding: 2em;
 }
 
-.graph-main-test {
+.graph-card {
   padding: 2em;
   background-color: #fff;
-  min-height: 400px; /* test */
-  margin-bottom: 3em;  /* test */
+}
+
+.card-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-table h3 {
+  font-size: .8rem;
+  line-height: 2.5rem;
+
+  font-weight: bold;
+  margin-top: 1em;
+  border-bottom: 1px solid lightgray;
+}
+
+.card-table p {
+  font-size: .8rem;
+  line-height: 2.5rem;
+  color: #636363;
+  border-bottom: 1px solid lightgray;
+}
+
+.card-result {
+  color: #fff;
+  background-color: #DA6D75;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1.45em;
+  align-self: flex-end;
 }
 
 footer {
