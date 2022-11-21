@@ -109,6 +109,14 @@ label {
 
 .graph-area {
   background-color: #F8F8F8;
+  padding: 2em;
+}
+
+.graph-main-test {
+  padding: 2em;
+  background-color: #fff;
+  min-height: 400px; /* test */
+  margin-bottom: 3em;  /* test */
 }
 
 footer {
