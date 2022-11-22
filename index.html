@@ -60,32 +60,40 @@
 
 
       <div class="bussinessCase-area">
-        <h2 class="input-title">Business case data <span>(optional)</span></h2>
+        <h2 class="input-title">Business case data <span class="light-span">(optional)</span></h2>
         <hr>
         <div class="input-area">
-          <div>
+          <div class="input-area-colum">
             <label for="testDuration">Test duration in days</label>
             <input type="text" id="testDuration">
           </div>
-          <div>
+          <div class="input-area-colum">
             <label for="trafficPercent">% of traffic in test</label>
-            <input type="text" id="trafficPercent">
+            <div class="input-field">
+              <input class="input-field-end" type="text" id="trafficPercent">
+              <span class="input-icon-end">%</span>
+            </div>
           </div>
         </div>
 
 
         <div class="input-area-colum">
           <label for="averageValue">Average order value</label>
-          <input type="text" id="averageValue">
+          <div class="input-field">
+            <span class="input-icon">€</span>
+            <input class="input-field" type="text" id="averageValue">
+          </div>
         </div>
 
         <div class="input-area-colum">
           <label for="minRevenue">Min. revenue yield in 6 month</label>
-          <input type="text" id="minRevenue">
+          <div class="input-field">
+            <span class="input-icon">€</span>
+            <input type="text" id="minRevenue">
+          </div>
         </div>
       </div>
       <button class="btn">Calculate + Business case</button>
-
     </form>
 
 
@@ -113,6 +121,7 @@
             <h2>-€1,999</h2>
           </div>
         </div>
+        <p>Based on an average order value of €12 and 6 months time</p>
       </div>
 
 

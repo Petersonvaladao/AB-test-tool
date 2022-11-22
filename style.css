@@ -19,12 +19,22 @@ a:visited {
   font-weight: bold;
   color: #fff;
   padding: .9em 3.2em;
+
   border: none;
   border-radius: 5px;
   background: rgb(50,120,180);
   background: linear-gradient(180deg, rgba(50,120,180,1) 0%, rgba(39,91,138,1) 100%);
   cursor: pointer;
   align-self: flex-end;
+}
+
+.btn:hover {
+  background: rgb(50,120,180);
+  background: linear-gradient(180deg, rgba(50,120,180,1) 0, rgba(0,20,138,1) 100%);
+}
+
+.light-span {
+  font-weight: lighter;
 }
 
 .nav-bar {
@@ -69,7 +79,6 @@ a:visited {
 main {
   display: grid;
   grid-template-columns: 1fr 2fr;
-
 }
 
 .user-input {
@@ -84,36 +93,71 @@ main {
 
 hr {
   border: 1px solid lightgrey;
-  margin-top: 1em;
+  margin-top: .8em;
+  margin-bottom: 2em;
+}
+
+.input-field {
+  display: flex;
+  width: 100%;
 }
 
 input {
-  padding: .9em 3em;
+  width: 100%;
+  padding: .9em 0;
   border: 1.9px solid lightgray;
   border-radius: 5px;
+}
+
+.input-field {
+  border-radius: 0 5px 5px 0;
+}
+
+.input-field-end {
+  border-radius: 5px 0 0 5px;
+}
+
+.input-icon {
+  min-width: 40px;
+  border-radius: 5px 0 0 5px;
+  background-color: #EEEEEE;
+  text-align: center;
+  line-height: 3rem;
+  color: #3B3B3B;
+  border: 1.9px solid lightgray;
+}
+
+.input-icon-end {
+  min-width: 40px;
+  border-radius: 0 5px 5px 0;
+  background-color: #EEEEEE;
+  text-align: center;
+  line-height: 3rem;
+  color: #3B3B3B;
+  border: 1.9px solid lightgray;
 }
 
 label {
   color: #636363;
   font-size: .9rem;
-  margin-bottom: .3em;
+  margin: 1em 0 .5em 0;
 }
 
 .input-area {
   display: flex;
-  margin: 1em 0 1.5em 0;
   justify-content: space-between;
-  gap: 2em;
+  gap: 1em;
+  margin-bottom: 2em;
 }
 
 .input-area-colum {
   display: flex;
   flex-direction: column;
-  margin: 1em 0 1.5em 0;
 }
 
 .bussinessCase-area {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .graph-area {
@@ -124,6 +168,20 @@ label {
 .graph-card {
   padding: 2em;
   background-color: #fff;
+  box-shadow: 2px 3px 5px lightgray;
+}
+
+.graph-card h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.graph-card p {
+  font-size: .8rem;
+  line-height: 2.5rem;
+  font-style: italic;
+  color: lightgray;
+  margin-top: 1em;
 }
 
 .card-table {
@@ -134,7 +192,6 @@ label {
 .card-table h3 {
   font-size: .8rem;
   line-height: 2.5rem;
-
   font-weight: bold;
   margin-top: 1em;
   border-bottom: 1px solid lightgray;
